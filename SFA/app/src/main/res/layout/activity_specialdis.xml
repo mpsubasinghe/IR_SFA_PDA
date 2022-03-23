@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="12"
+    android:orientation="vertical"
+    android:background="@drawable/login_background"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:id="@+id/textViewretname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Retaname"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+        android:id="@+id/textinv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="InvNo. "
+         />
+
+        <TextView
+            android:id="@+id/textinvno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="invno"
+             />
+
+        <Button
+            android:text="Back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonback"
+            android:layout_weight="2"
+            android:background="@drawable/border"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textcate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Range"
+            />
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnercate"
+            android:layout_weight="5" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textproduct"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Product"
+             />
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerpro"
+            android:layout_weight="5" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dis%"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:id="@+id/editTextdis"
+            android:layout_weight="2" />
+        <TextView
+            android:id="@+id/textq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Qty"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text=""
+            android:ems="10"
+            android:id="@+id/editTextqty"
+            android:layout_weight="2.5" />
+
+        <Button
+            android:text="Add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonadd"
+            android:layout_weight="1.5"
+            android:background="@drawable/border"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="6"
+        android:padding="5dp"
+        android:background="@drawable/bordertable">
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+
+            android:layout_height="200dp"
+            android:layout_width="match_parent"
+
+            android:background="#d4ffea" >
+
+            <HorizontalScrollView
+                android:id="@+id/hscrll1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:measureAllChildren="false"
+                android:scrollbars="horizontal"
+                >
+
+                    <TableLayout
+                        android:id="@+id/table_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true" >
+                    </TableLayout>
+
+            </HorizontalScrollView>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Button
+            android:text="Send Request"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonsend"
+            android:layout_weight="1"
+            android:background="@drawable/border"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/textCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:text=""
+                />
+
+
+        </LinearLayout>
+
+        <Button
+            android:text="Approve Invoice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonconform"
+            android:layout_weight="1"
+            android:background="@drawable/border"/>
+
+
+    </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

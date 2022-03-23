@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mano.sfa">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- Permission: Allow Connect to Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginformActivity" />
+        <activity android:name=".InvList" />
+        <activity android:name=".RetailerActivity" />
+        <activity android:name=".PrevinvoiceActivity" />
+        <activity android:name=".InvtypeActivity" />
+        <activity android:name=".InvmainActivity" />
+        <activity android:name=".InvprintActivity" />
+        <activity android:name=".MktretActivity" />
+        <activity android:name=".RedemviewActivity" />
+        <activity android:name=".MktreturnsActivity" />
+        <activity android:name=".PrintdataActivity" />
+        <activity android:name=".specialdis" />
+        <activity android:name=".list_item" />
+        <activity android:name=".SPMktRetActivity" />
+        <activity android:name=".MenucActivity" />
+        <activity android:name=".RetailerViewActivity" />
+        <activity android:name=".RetailerAddActivity" />
+        <activity android:name=".StocksActivity" />
+        <activity android:name=".TargetActivity" />
+        <activity android:name=".Synchoronization" />
+        <activity android:name=".GetLocationActivity" />
+        <activity android:name=".SyncListActivity" />
+        <activity android:name=".ReportCateActivity"></activity>
+    </application>
+
+</manifest>
